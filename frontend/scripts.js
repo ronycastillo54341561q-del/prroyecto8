@@ -1,8 +1,8 @@
-const API = 'http://localhost:3014';
+
 async function cargarAlumnos(){
     const contenedor = document.getElementById("contenedor");
     contenedor.innerHTML = "";
-    const res = await fetch(`${API}/alumnos`);
+    const res = await fetch(`http://localhost:3014/alumnos`);
     const alumnos = await res.json();
 
     //iterar el arreglo alumnos y hacer que aparezca en el contenedor 
